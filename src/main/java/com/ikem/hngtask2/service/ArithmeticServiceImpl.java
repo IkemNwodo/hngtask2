@@ -30,9 +30,11 @@ public class ArithmeticServiceImpl implements ArithmeticService {
             case "division":
                 response.setOperationType(OperationType.DIVISION);
                 response.setResult(divide(request.getX(), request.getY()));
+                break;
             case "multiplication":
                 response.setOperationType(OperationType.MULTIPLICATION);
                 response.setResult(multiply(request.getX(), request.getY()));
+                break;
         }
         return response;
     }
